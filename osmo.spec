@@ -1,6 +1,6 @@
 Name:		osmo
 Version:	0.2.10
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	A handy personal organizer
 License:	GPLv2+
 Group:		Office
