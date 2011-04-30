@@ -1,11 +1,12 @@
 Name:		osmo
 Version:	0.2.10
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	A handy personal organizer
 License:	GPLv2+
 Group:		Office
 Url:		http://clayo.org/osmo
 Source0:	http://downloads.sourceforge.net/osmo-pim/%{name}-%{version}.tar.gz
+Patch0:		osmo-0.2.10-libnotify-0.7.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 BuildRequires:	gtk+2-devel >= 2.10
@@ -22,6 +23,7 @@ manager, address book and notes modules.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %configure2_5x LIBICAL_CFLAGS=-I/usr/include/libical
