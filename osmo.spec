@@ -4,7 +4,7 @@ Release:	%mkrel 3
 Summary:	A handy personal organizer
 License:	GPLv2+
 Group:		Office
-Url:		http://clayo.org/osmo
+Url:		https://clayo.org/osmo
 Source0:	http://downloads.sourceforge.net/osmo-pim/%{name}-%{version}.tar.gz
 Patch0:		osmo-0.2.10-libnotify-0.7.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
