@@ -9,6 +9,11 @@ Source0:	http://downloads.sourceforge.net/osmo-pim/%{name}-%{version}.tar.gz
 Patch0:		osmo-0.2.10-libnotify-0.7.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gtk+2-devel >= 2.10
 BuildRequires:	gtkspell-devel >= 2.0.5
 BuildRequires:	libical-devel >= 0.33
